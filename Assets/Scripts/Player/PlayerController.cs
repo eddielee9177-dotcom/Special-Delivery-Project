@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D bc;
     #endregion
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         rb.sleepMode = RigidbodySleepMode2D.NeverSleep;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (rb.linearVelocityY <= 0f)
